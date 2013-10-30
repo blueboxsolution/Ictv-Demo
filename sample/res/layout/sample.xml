@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_android" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:background="#bb000000"
+        android:id="@+id/sample_relative">
+
+        <Button style="@android:style/Widget.Button.Small"
+            android:id="@+id/sample_button"
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text=">" />
+
+ <Button
+     android:id="@+id/sample_button_2"
+     style="@android:style/Widget.Button.Small"
+     android:layout_width="35dip"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:text="&lt;" />
+
+ <TextView
+     android:id="@+id/sample_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:text="ICTV Demo"
+     android:textColor="#ffffff"
+     android:textSize="19sp" />
+
+    </RelativeLayout>
+    
+    <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/sample_relative" />
+
+</RelativeLayout>
